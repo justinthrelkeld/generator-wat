@@ -1,0 +1,51 @@
+// grid settings
+
+$column: 60px
+$gutter: 20px
+$grid-columns: 9 // set this here for the visual grid
+$max-width: 100%
+// $visual-grid: true
+$visual-grid-index: front
+
+@import "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+
+@import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon"
+@import "../../../bower_components/neat/app/assets/stylesheets/neat"
+
+// import prettier default colors
+// defines
+// - $aqua
+// - $blue
+// - $navy
+// - $teal
+// - $green
+// - $olive
+// - $lime
+// - $yellow
+// - $orange
+// - $red
+// - $fuchsia
+// - $purple
+// - $maroon
+// - $white
+// - $silver
+// - $gray
+// - $black
+
+@import "../../../bower_components/mrmrs-colors/sass/colors"
+
+
+
+$grid-columns: 2
+
+// Define your breakpoints
+$desktop: new-breakpoint(min-width 700px 5)
+$tablet: new-breakpoint(min-width 200px 3)
+
+// global defaults/resets
+
+// mobile first
+
+@include media($tablet)
+
+@include media($desktop)
